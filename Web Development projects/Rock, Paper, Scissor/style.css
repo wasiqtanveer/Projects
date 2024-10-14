@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-color: #BEDC74;
+}
+
+header{
+    background-color: #387F39;
+    color: #F6E96B;
+    font-family: sans-serif;
+    height: 40px;
+    text-align: center;
+    padding: 4px;
+    font-size: 38px;
+}
+
+.game{
+
+    width:1000px;
+    margin: auto;
+}
+
+.options{
+
+    display: flex;
+    margin: 20px auto ;
+    justify-content: space-around;
+
+}
+
+.option{
+    background-color:#387F39;
+    padding: 30px 50px;
+    text-align: center;
+    font-size: 120px;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        background-color: #F6E96B;
+        transform: scale(1.12);
+    }
+
+    &:active{
+        transition: transform 0.1s ease;
+        background-color: #BEDC74;
+        transform:scale(0.8);
+    }
+}
+
+.score{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: monospace;
+    color:#387F39;
+    font-weight: bolder;
+    transition: transform 1s ease;
+ 
+}
+
+
+.status{
+    padding: 3px;
+    text-align: center;
+    color:#F6E96B;
+    font-family: monospace;
+    font-size: 40px;
+    background-color: #387F39;
+    width: 700px;
+    margin: 80px auto;
+    border-radius: 30px;
+    border: 4px solid #F6E96B;
+    transition: all 0.2s ease-in-out;
+    
+
+    &:hover
+    {
+        transform: scale(1.2);
+    }
+ }
+
+.scoree
+{
+    transform: scale(3);
+   color:  #ff0000; 
+}
+
+
+.human, .computer{
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+

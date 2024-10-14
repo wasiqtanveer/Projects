@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            background-color: rgb(255, 255, 255);
+            height: 450px;
+            width: 350px;
+            margin: 300px auto;
+            border-radius: 30px;
+            box-shadow:1px 20px 30px 0.3px rgb(0, 0, 0) ;
+            
+        }
+
+        .blue{
+            background-color: rgb(29, 85, 238);
+            height: 35%;
+            border-radius: 30px 30px 0 0 ;
+        }
+
+        .white{
+            background-color: rgb(235, 240, 245);
+            height: 65%;
+            border-radius: 0 0 30px 30px;
+        }
+
+        .blue img{
+            width: 120px;
+            position: relative;
+            margin: auto;
+            border-radius: 9999px;
+            left: 114px;
+            top: 38px;
+            border: 2px solid rgb(29, 85, 238);;
+            
+        }
+
+        .white h2{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-top: 25px;
+            text-align: center;
+            font-weight:500;
+        }
+
+        .white h3{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-top: 10px;
+            text-align: center;
+            font-weight:300;
+
+        }
+
+        .socials{
+            position: relative;
+            width: 250px;
+            left: 50px;
+            top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+         .socials img{
+            border-radius: 999px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blue">
+            <img  src="profile.webp" alt="">
+        </div>
+        <div class="white">
+            <h2>Wasiq Tanveer</h2>
+            <h3>Student & Programmer</h3>
+            <div class="socials">
+                <img class="fb" width="60px" src="facebook.png" alt="">
+                <img class="x" width="60px" src="twitter.webp" alt="">
+                <img class="insta" width="60px" src="images.jfif" alt="">
+                <img class="yt" width="60px" src="yt.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

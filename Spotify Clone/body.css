@@ -1,0 +1,31 @@
+.body
+{
+    display: flex;
+}
+
+.part
+{
+    background-color:  #202020;
+    color: white;
+    padding: 1em;
+    margin: 0.5em;
+
+}
+
+.left
+{
+
+    width: 30vw;
+    border-radius: 1em;
+}
+
+.right
+{
+    border-radius: 1em;
+    width: 70vw;
+}
+
+.library
+{
+    display: flex;
+}

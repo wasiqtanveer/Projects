@@ -1,0 +1,146 @@
+*
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body
+{
+    background-color: black;
+    margin: 0;
+}
+
+/* changes th elogo color to white */
+.invert img
+{
+    filter: invert();
+}
+
+/* logos size */
+.logo
+{
+    width: 25px;
+    height: 25px;
+}
+
+.spotify
+{
+    padding: 10px 20px 0px 0px;
+}
+
+/* whole block of the top bar */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 98vw;
+    padding: 0.6em;
+}
+
+.middle
+{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover .home
+    {
+        translate: -20px;
+    }
+
+}
+
+form
+{
+    display: flex;
+    padding: 0.9em;
+    background-color: #202020;
+    border-radius: 10em;
+    gap: 0.8em;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+
+}
+
+form input
+{
+    border: none;
+    background-color: #202020;
+    border-radius: 10em;
+    font-size: 1em;
+    width: 30vw;
+    font-weight:600;
+    font-size: 1.2em;
+    transition: all 1s ease-in-out;
+    color: white;
+
+    &:focus
+    {
+       outline: none;
+    }
+
+    
+
+}
+
+.home
+{
+    padding: 0.7em ;
+    background-color:  #202020;
+    border-radius: 30em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+    &:hover
+    {
+        transform: scale(1.3);
+    }
+}
+
+.log
+{
+    display: flex;
+    gap: 7px;
+}
+
+.log .signup
+{
+    height: 3.5em;
+    width: 7em;
+    border-radius: 30em;
+    font-weight: bolder;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+
+    transition: all 0.3s ease-in-out;
+    
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+}
+
+.log .login
+{
+    height: 3.5em;
+    width: 8em;
+    border-radius: 30em;
+    font-weight: bolder;
+    font-size: 0.9em;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+}
+
+
