@@ -20,9 +20,9 @@
     resize: horizontal;
     overflow:auto;
     max-width: 500px;
-    min-width: 200px;
+    min-width: 220px;
     min-height: 30vh;
-    max-height: 60vh;
+    max-height: 90vh;
     height: 87vh;
     
 }
@@ -70,9 +70,8 @@ footer
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: fixed;
-    bottom: 30px;
-    left: 40px;
+    position:relative;
+    top: 680px;
     background-color: rgb(83, 83, 83);
     padding: 1.5em;
     border-radius: 1em;

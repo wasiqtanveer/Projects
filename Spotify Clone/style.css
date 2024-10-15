@@ -128,6 +128,12 @@ form input
     }
 }
 
+.log .signup a
+{
+    color: white;
+    text-decoration: none;
+}
+
 .log .login
 {
     height: 3.5em;
@@ -142,5 +148,14 @@ form input
         transform: scale(1.1);
     }
 }
+
+
+.log .login a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
 
 

@@ -1,0 +1,153 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #121212, #202020);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* -------------------------- Styling the card -------------------------------- */
+
+.card
+{
+    width: 35vw;
+    
+    padding: 2em;
+    border-radius: 0.9em;
+    color: white;
+}
+
+/* -------------------------- Styling the logo and header -------------------------------- */
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}
+
+header img
+{
+    filter: invert();
+}
+
+header h1
+{
+    width: 320px;
+    text-align: center;
+}
+
+
+/* -------------------------- styling the email and password input ------------------------------- */
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    font-weight: bold;
+}
+
+.mail
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5px;
+}
+
+
+.password
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5px;
+}
+
+.mail input , .password input
+{
+    padding: 0.9em;
+    width: 17em;
+    font-size: 1em;
+    background-color: #1a1919;
+    border: 1px solid white;
+    border-radius: 0.2em;
+    color: white;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+
+
+    &::placeholder
+    {
+        font-weight: bold;
+    }
+
+    &:focus
+    {
+        box-shadow: inset 0 0 0 4px #ffffff; /* Inward shadow effect */
+        outline: none; /* Remove default outline */
+    }
+
+}
+
+.btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 0em;
+
+}
+
+button
+{
+    width: 65%;
+    padding: 1.2em;
+    border-radius: 30em;
+    background-color: #1ed760;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-weight:bolder;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+}
+
+footer
+{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    color: rgb(192, 190, 190);
+}
+
+footer a
+{
+    color: white;
+}
+
+.terms
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8em;
+}
