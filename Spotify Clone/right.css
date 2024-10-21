@@ -1,0 +1,112 @@
+.artists
+{
+}
+
+.artists a
+{
+    color: white;
+}
+
+.headings
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-weight: bold;
+}
+
+.headings p 
+{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.headings a
+{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover
+    {
+        color: rgb(187, 187, 187);
+        text-decoration: underline;
+    }
+}
+
+
+/* Css for circles containers */
+
+.all
+{
+    display: flex;
+    gap: 0.2em;
+    overflow: hidden;
+}
+
+.circleContainer
+{
+    padding:1em;
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+        border-radius: 0.5em;
+        background-color: #3a3a3a;
+    }
+
+    &:hover .circle img
+    {
+        box-shadow: 0px 0px 0px 0px black;
+    }
+
+    &:hover .circle img:nth-of-type(2)
+    {
+        opacity: 1;
+        bottom:0.27578em;
+    }
+
+}
+
+.circleContainer p:first-of-type
+{
+
+    font-weight: 600;
+}
+
+.circleContainer p
+{
+    margin: 0;
+    font-weight: normal;
+}
+
+.circle img:first-of-type
+{
+    border-radius: 30em;
+    max-width: 9vw;
+    
+    box-shadow: 0px 0px 20px 10px #0000007a;
+}
+
+.circle img:nth-of-type(2)
+{
+    position: absolute;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #1ed760;
+    border-radius: 30em;
+    left: 7.03398em;
+    bottom: -1.27578em;
+    opacity: 0;
+    transition: all 0.2s ease;
+
+}
+
+.circle
+{
+    position: relative;
+}
+
+
+.text
+{
+    margin: 1em;
+}

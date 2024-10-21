@@ -1,0 +1,86 @@
+:root
+{
+    --background : black;
+    --secondaryBackground : rgb(71, 70, 70);
+    --PrimaryText : rgb(255, 251, 5);
+    --secondaryText : rgb(255, 255, 255);
+
+}
+
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* -------------- Header Css ------------------- */
+
+body
+{
+    all: unset;
+    background-color: var(--background);
+    color: var(--PrimaryText);
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7em;
+    white-space: nowrap;
+}
+
+h1
+{
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    &:hover
+    {
+        transform: scale(1.4);
+
+    }
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    color: var(--secondaryText);
+    gap: 2em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+ul li
+{
+    cursor: pointer;
+    padding: 0.7em;
+    border-radius: 0.4em;
+    transition: all 0.5s ease;
+
+    &:hover
+    {
+        transform: scale(1.2);
+        border-radius: 3em;
+        background-color: var(--PrimaryText);
+        color: var(--background);
+        box-shadow: 0 0 10px var(--PrimaryText), 0 0 20px var(--PrimaryText), 0 0 25px var(--PrimaryText), 0 0 50px var(--PrimaryText);
+    }
+
+    &:active
+    {
+        transform: scale(0.5);
+    }
+}
+
+
+/* ---------------- Home Css ---------------------- */
+
+
+
+
+
+
+
