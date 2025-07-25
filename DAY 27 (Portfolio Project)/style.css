@@ -1,0 +1,462 @@
+/* styling the whole body */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono';
+}
+
+body
+{
+    background-color: var(--primary-sec-color);
+    color: var(--secondary-color);
+}
+
+:root
+{
+    --primary-color: #28443F;
+    --primary-sec-color: #122522;
+    --secondary-color: #F2FD7D;
+
+    --color-1 : #FBA002;
+    --color-2 : #313B2F;
+}
+
+/* ----------------------- styling header ------------------ */
+header 
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.5em;
+    padding: 0.3em 1em;
+}
+header .title
+{
+    font-weight:bolder;
+}
+
+header nav ul li a
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header nav ul
+{
+    list-style:none;
+    display: flex;
+    gap:2rem;
+}
+
+
+/* ----------------------- styling intro ------------------ */
+.intro
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 76vw;
+    margin: 0.8em auto;
+    border-radius: 0.5em;
+    padding: 1em;
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+}
+
+.intro h1
+{
+    font-size: 2.5em;
+}
+
+.intro p
+{
+    font-size: 1.2em;
+}
+
+
+
+/* ----------------------- styling About me ------------------ */
+
+.about-me h2
+{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 20vw;
+    margin: 1em auto auto auto;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    top: 1.6em;
+}
+
+.about-content
+{
+    
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 76vw;
+    margin: 0.8em auto;
+    padding: 3em 1em 1em 1em;
+    border-radius: 0.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.about-content .image
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content .image img
+{
+    height: 16em;
+    width: 16em;
+    border-radius: 50%;
+    border: solid 3px var(--secondary-color);
+}
+
+.about-content .text
+{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    
+}
+
+
+
+
+
+/* ----------------------- styling Projects ------------------ */
+
+#projects .project-title
+{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 20vw;
+    margin: 1em auto auto auto;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    top: 1.6em;
+}
+
+.about-projects
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 76vw;
+    margin: 0.8em auto;
+    padding: 3em 1em 1em 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+}
+
+.about-projects .card
+{
+    background-color: var(--primary-sec-color);
+    border-radius: 0.5em;
+    padding: 2em;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+    &:hover
+    {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        transform: scale(1.04);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.about-projects .card:hover a
+{
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.about-projects .card a
+{
+    font-weight: bolder;
+    color: var(--secondary-color);
+    
+    
+}
+
+
+
+
+/* ----------------------- styling skills ------------------ */
+#skills .bars
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 76vw;
+    margin: 0.8em auto;
+    padding: 3em 1em 1em 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+}
+
+#skills  h2
+{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 20vw;
+    margin: 1em auto auto auto;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    top: 1.6em;
+}
+
+#skills .bars ul li
+{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 5px var(--primary-sec-color);
+    margin: 0.8em;
+    border-radius: 3em;
+    padding: 0.8em;
+    font-weight: bolder;
+    
+}
+
+#skills .bars ul
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.bars ul .html
+{
+    width: 90%;
+}
+
+.bars ul .css
+{
+    width: 80%;
+}
+.bars ul .javascript
+{
+    width: 85%;
+}
+
+
+/* ----------------------- styling contact ------------------ */
+
+#contact .heading
+{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 20vw;
+    margin: 1em auto auto auto;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    top: 1.6em;
+}
+
+
+#contact form
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 76vw;
+    margin: 0.8em auto;
+    padding: 3em 1em 1em 1em;
+    border-radius: 0.5em;
+    display: flex;
+    gap: 1em;
+  
+}
+
+
+form .input
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input .customer-name,
+form .input .customer-mail,
+form .input .customer-message
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+form .input .customer-name input,
+form .input .customer-mail input,
+form .input .customer-message textarea
+{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: var(--primary-sec-color);
+    color: var(--secondary-color);
+}
+
+
+form .input .customer-name input:focus,
+form .input .customer-mail input:focus,
+form .input .customer-message textarea:focus
+{
+    outline: none;
+    border: 2px solid var(--secondary-color);
+}
+
+input::placeholder , textarea::placeholder
+{
+    color: var(--secondary-color);
+    opacity: 0.7;
+}
+
+form .btn button
+{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5em 1em;
+    font-size: large;
+    border-radius: 0.5em;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover
+    {
+        background-color: var(--primary-sec-color);
+        color: var(--secondary-color);
+        transform: scale(1.05);
+    }
+}
+
+
+form .information
+{
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 1em;
+    align-items: baseline;
+}
+
+form .information .find-me h2
+{
+    display: flex;
+    gap: 0.5em;
+}
+
+form .information .location h2
+{
+    display: flex;
+    gap: 0.5em;
+}
+
+
+form .information .social-media
+{
+    display: flex;
+    font-size: 1.5em;
+    gap: 1em;
+}
+
+
+footer
+{
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        width: 90vw;
+        max-height: none;
+    }
+
+    .about-me h2 {
+        width: auto;
+        max-width: 20vw;
+        font-size: 1.2em;
+    }
+
+    .about-content .image img {
+        height: 10em;
+        width: 10em;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    header nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

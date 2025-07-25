@@ -1,0 +1,104 @@
+                      # 📁 Wasiq's Portfolio Website – Documentation
+
+## 🧾 Project Overview
+
+**Wasiq's Portfolio Website** is a fully responsive personal website built using HTML and CSS. It showcases the developer's skills, projects, and contact information in a clean and professional layout. The site is designed to be simple yet effective, highlighting the developer’s frontend skills and aesthetic sense.
+
+---
+
+## ✨ Features
+
+* **Responsive Design** – Adjusts layout for desktop, tablet, and mobile devices.
+* **Modern UI** – Uses custom fonts, color themes, and hover effects.
+* **Projects Showcase** – Displays multiple project cards with titles, descriptions, and links.
+* **Skills Section** – Visual skill bars showing proficiency levels.
+* **Contact Form** – Includes input fields for name, email, and message.
+* **Social Media Links** – Icons for GitHub, LinkedIn, Instagram, etc.
+* **Accessible Layout** – Semantic tags for better SEO and screen reader compatibility.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology         | Purpose                                            |
+| ------------------ | -------------------------------------------------- |
+| HTML5              | Page structure                                     |
+| CSS3               | Styling and responsiveness                         |
+| Google Fonts       | Custom typography (`JetBrains Mono`, `Space Mono`) |
+| Font Awesome       | Icon set for UI elements                           |
+| Flexbox & CSS Grid | Layout management                                  |
+| Media Queries      | Mobile responsiveness                              |
+
+---
+
+## 📂 Folder Structure
+
+```
+portfolio/
+│
+├── index.html         # Main HTML file
+├── style.css          # Main CSS file
+├── image.png          # Profile image
+├── README.md          # (optional) GitHub documentation file
+```
+
+---
+
+## 🧭 How to Use
+
+1. **Clone or Download**
+
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   ```
+
+2. **Open the project**
+
+   * Use any modern browser (Chrome, Edge, Firefox).
+   * Open `index.html` in the browser.
+
+3. **Customize the Content**
+
+   * Update the text inside the `<p>` and `<h2>` tags.
+   * Replace `image.png` with your own image.
+   * Update project descriptions and links inside the project cards.
+
+4. **Add Functionality (optional)**
+
+   * Use JavaScript or backend logic to make the contact form functional.
+
+---
+
+## 📱 Responsiveness Guide
+
+| Device Width   | Behavior                             |
+| -------------- | ------------------------------------ |
+| Above 1024px   | Full-width layout with 3-column grid |
+| 768px – 1023px | Adjusts layout, smaller fonts/images |
+| Below 768px    | Stacks sections vertically, 1-column |
+
+---
+
+## 🧩 Future Improvements
+
+* Add JavaScript animations or interactions.
+* Implement backend (Node.js, PHP) for form submission.
+* Include more detailed project previews with images.
+* Add dark/light theme toggle.
+* Add a downloadable CV section.
+
+---
+
+## 📜 License
+
+This project is open source and free to use for learning and portfolio purposes.
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Wasiq Tanveer**
+📍 Kohat, Pakistan
+📧 [mwasiqt@gmail.com](mailto:mwasiqt@gmail.com)
+
+
